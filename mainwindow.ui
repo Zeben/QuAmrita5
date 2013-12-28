@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QuAmrita 5</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableViewModel"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushAddUnit">
+        <property name="text">
+         <string>Добавить...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushEditUnit">
+        <property name="text">
+         <string>Редактировать...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushDeleteUnit">
+        <property name="text">
+         <string>Удалить...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushCreateOrder">
+        <property name="text">
+         <string>Создать заказ...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>436</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Структура</string>
+    </property>
+    <addaction name="actionHistory"/>
+    <addaction name="actionCalcWithAgents"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Статистика</string>
+    </property>
+    <addaction name="actionOverheads"/>
+    <addaction name="actionGetGoods"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Склад</string>
+    </property>
+    <addaction name="actionGoodsCatalog"/>
+    <addaction name="separator"/>
+    <addaction name="actionFill"/>
+    <addaction name="actionWriteOff"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Дополнительно</string>
+    </property>
+    <addaction name="actionMainTablePrint"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionHelpTopics"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionHistory">
+   <property name="text">
+    <string>История баллов</string>
+   </property>
+  </action>
+  <action name="actionCalcWithAgents">
+   <property name="text">
+    <string>Расчеты с агентами</string>
+   </property>
+  </action>
+  <action name="actionOverheads">
+   <property name="text">
+    <string>Накладные</string>
+   </property>
+  </action>
+  <action name="actionGetGoods">
+   <property name="text">
+    <string>Получить товар</string>
+   </property>
+  </action>
+  <action name="actionGoodsCatalog">
+   <property name="text">
+    <string>Каталог товаров</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Пополнить...</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Списание...</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Лицензия</string>
+   </property>
+  </action>
+  <action name="action_Qt">
+   <property name="text">
+    <string>О Qt</string>
+   </property>
+  </action>
+  <action name="actionMainTablePrint">
+   <property name="text">
+    <string>Печать таблицы...</string>
+   </property>
+  </action>
+  <action name="actionFill">
+   <property name="text">
+    <string>Пополнить...</string>
+   </property>
+  </action>
+  <action name="actionWriteOff">
+   <property name="text">
+    <string>Списание...</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Настройки...</string>
+   </property>
+  </action>
+  <action name="actionHelpTopics">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>О программе...</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>О Qt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
